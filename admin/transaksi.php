@@ -22,9 +22,9 @@
             $warna_status = 'null';
             if ($value["status_pengiriman"] == "Belum Dibayar") {
                 $warna_status = "danger";
-            } elseif ($value["status_pengiriman"] == "Sudah Dibayar") {
-                $warna_status = "warning";
             } elseif ($value["status_pengiriman"] == "Sedang Diproses") {
+                $warna_status = "warning";
+            } elseif ($value["status_pengiriman"] == "Sedang Dipacking") {
                 $warna_status = "info";
             } elseif ($value["status_pengiriman"] == "Selesai") {
                 $warna_status = "success";

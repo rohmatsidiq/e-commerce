@@ -16,13 +16,13 @@ include "../koneksi.php";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Toko Online</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
         nav a:hover {
             background-color: #8de0c8;
         }
     </style>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>

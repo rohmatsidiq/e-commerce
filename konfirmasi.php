@@ -61,7 +61,7 @@ if (isset($_POST["konfirmasi"])) {
 
     // kasih notif dan lempar halaman ke index untuk sementara
     echo "<script>alert('Konfirmasi pembayaran telah berhasil')</script>";
-    echo "<script>location='index.php'</script>";
+    echo "<script>location='account.php'</script>";
 }
 
 ?>
@@ -81,6 +81,7 @@ if (isset($_POST["konfirmasi"])) {
             color: black;
         }
     </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body style="background-color: whitesmoke;">
@@ -116,7 +117,7 @@ if (isset($_POST["konfirmasi"])) {
                     <label class="form-label" for="bukti_transfer">Bukti Transfer</label>
                     <input required class="form-control" type="file" name="bukti_transfer" id="bukti_transfer">
                 </div>
-                <input type="hidden" name="status_pengiriman" id="status_pengiriman" value="Sudah Dibayar">
+                <input type="hidden" name="status_pengiriman" id="status_pengiriman" value="Sedang Diproses">
                 <div class="mb-3">
                     <button class="btn btn-success" name="konfirmasi">Konfirmasi</button>
                 </div>

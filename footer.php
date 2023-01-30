@@ -35,13 +35,13 @@
                 <div class="col-md-4 mb-4">
                     <h5 style="margin: 0;" class="text-success">Ikuti Kami</h5>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-6 col-md-4">
                             <a href="">
                                 <img src="./logo/instagram.png" alt="">
                                 Instagram
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-6 col-md-4">
                             <a href="">
                             <img src="./logo/facebook.png" alt="">
                                 Facebook
@@ -51,12 +51,12 @@
                     <br>
                     <h5 style="margin: 0;" class="text-success">E-commecre</h5>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-6 col-md-4">
                             <a href="">
                                 <img src="./logo/shopee.png" width="16px" alt=""> Shopee
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-6 col-md-4">
                             <a href="">
                                 <img src="./logo/tokopedia.png" width="17px" alt=""> Tokopedia
                             </a>

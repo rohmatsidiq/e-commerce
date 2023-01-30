@@ -21,6 +21,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
             color: black;
         }
     </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body style="background-color: whitesmoke;">
@@ -36,7 +37,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
                     <div style="background-color: white; padding: 20px; border-radius: 10px;">
                         <a href="detail.php?id=<?= $value['id_produk']; ?>">
                             <img src="./fotoproduk/<?= $value['gambar_produk']; ?>" style="width: 100%;" alt="">
-                            <h5><?= $value['nama_produk']; ?></h5>
+                            <h5 class="text-success"><?= $value['nama_produk']; ?></h5>
                             <p style="margin: 0;">Harga : Rp<?= number_format($value['harga_produk'], 0, '', '.'); ?></p>
                             <div>
                                 <small>Stock : <?= $value["stock_produk"]; ?></small>

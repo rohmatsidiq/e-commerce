@@ -186,7 +186,6 @@ $stock_ready = true;
             // kirim email notifikasi ke pelanggan
 
 
-            //kirim email notifikasi ke seller
 
 
 

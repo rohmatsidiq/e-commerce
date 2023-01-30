@@ -31,6 +31,7 @@ $stock_ready = true;
             color: black;
         }
     </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body style="background-color: whitesmoke;">

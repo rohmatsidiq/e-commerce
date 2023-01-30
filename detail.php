@@ -22,6 +22,8 @@ $result = mysqli_fetch_assoc($query);
             color: black;
         }
     </style>
+    <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 <body style="background-color: whitesmoke;">
@@ -35,7 +37,7 @@ $result = mysqli_fetch_assoc($query);
                 <img style="width: 100%;" src="./fotoproduk/<?= $result['gambar_produk']; ?>" alt="<?= $result['nama_produk']; ?>">
             </div>
             <div class="col-12 col-md-6">
-                <h3><?= $result['nama_produk']; ?></h3>
+                <h3 class="text-success"><?= $result['nama_produk']; ?></h3>
                 <p style="margin: 0;">Rp<?= number_format($result['harga_produk'], 0, '', '.'); ?></p>
                 <div>
                     <small>Stock : <?= $result['stock_produk']; ?></small>

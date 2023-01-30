@@ -32,6 +32,7 @@ $resulttransaksiproduk = mysqli_fetch_all($querytransaksiproduk, MYSQLI_ASSOC);
             color: black;
         }
     </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body style="background-color: whitesmoke;">
