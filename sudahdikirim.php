@@ -14,6 +14,7 @@ if ($adatransaksi < 1) {
 ?>
 
 <?php foreach ($reversehasil as $value) : ?>
+    <?php $id_transaksi = $value['id_transaksi'] ?>
     <?php $jumlahtotal = $value["jumlah_harga"] + $value["ongkir"] ?>
     <div style="background-color: white; padding: 10px; border-radius: 10px;" class="row mb-3">
         <div class="col-md-1">
@@ -27,7 +28,7 @@ if ($adatransaksi < 1) {
         </div>
         <div class="col-md-7">
             <div style="display: flex; justify-content: end;">
-                <a class="btn btn-link btn-sm" href="">Detail</a>
+                <a class="btn btn-link btn-sm" href="account.php?halaman=detailtransaksi&id=<?= $id_transaksi; ?>">Detail</a>
             </div>
         </div>
     </div>

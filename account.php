@@ -17,7 +17,7 @@ if (empty($resultpelanggan["foto_profil"])) {
     $fotoprofil = $resultpelanggan["foto_profil"];
 }
 
-if (!isset($_GET["halaman"]) || $_GET["halaman"] == "belumdibayar" || $_GET["halaman"] == "detailbelumdibayar") {
+if (!isset($_GET["halaman"]) || $_GET["halaman"] == "belumdibayar") {
     $warnabelumdibayar = "danger";
     $warnasedangdiproses = "outline-secondary";
     $warnasedangdipacking = "outline-secondary";
@@ -37,6 +37,11 @@ if (!isset($_GET["halaman"]) || $_GET["halaman"] == "belumdibayar" || $_GET["hal
     $warnasedangdiproses = "outline-secondary";
     $warnasedangdipacking = "outline-secondary";
     $warnasudahdikirim = "success";
+} else {
+    $warnabelumdibayar = "outline-secondary";
+    $warnasedangdiproses = "outline-secondary";
+    $warnasedangdipacking = "outline-secondary";
+    $warnasudahdikirim = "outline-secondary";
 }
 
 ?>
@@ -64,9 +69,9 @@ if (!isset($_GET["halaman"]) || $_GET["halaman"] == "belumdibayar" || $_GET["hal
     <?php include('navigasi.php') ?>
 
     <div class="container mt-3" style="min-height: 100vh;">
-        <div class="row">
+        <div class="row print">
             <div class="col -4col-md-2 p-4">
-                <img style="width: 100%; border-radius: 100%;" src="./fotoprofil/<?= $fotoprofil; ?>" alt="">
+                <img class="print" style="width: 100%; border-radius: 100%;" src="./fotoprofil/<?= $fotoprofil; ?>" alt="">
             </div>
             <div class="col-8 col-md-10 p-3">
                 <h3><?= $resultpelanggan["nama_pelanggan"]; ?></h3>
@@ -77,7 +82,7 @@ if (!isset($_GET["halaman"]) || $_GET["halaman"] == "belumdibayar" || $_GET["hal
             </div>
         </div>
 
-        <nav class="mt-3">
+        <nav class="mt-3 print">
             <div class="row">
                 <div class="col-6 col-md-3 mb-3">
                     <a style="display: block;" class="btn btn-<?= $warnabelumdibayar; ?>" href="account.php?halaman=belumdibayar">
@@ -114,7 +119,7 @@ if (!isset($_GET["halaman"]) || $_GET["halaman"] == "belumdibayar" || $_GET["hal
                 </div>
             </div>
         </nav>
-        <hr>
+        <hr class="print">
 
         <?php
         if (!isset($_GET["halaman"]) || $_GET["halaman"] == "belumdibayar") {
@@ -125,20 +130,31 @@ if (!isset($_GET["halaman"]) || $_GET["halaman"] == "belumdibayar" || $_GET["hal
             include("sedangdipacking.php");
         } else if ($_GET["halaman"] == "sudahdikirim") {
             include("sudahdikirim.php");
-        }else if ($_GET["halaman"] == "detailbelumdibayar") {
-            include("detailbelumdibayar.php");
+        } else if ($_GET["halaman"] == "detailtransaksi") {
+            include("detailtransaksi.php");
         }
-
-
         ?>
-
-
 
     </div>
     <!-- FOOTER -->
     <?php include 'footer.php' ?>
 
-    <script src="./js/bootstrap.min.js"></script>
-</body>
+    <style>
+        @media print {
+            .print {
+                display: none;
+            }
 
+            .border-abu {
+                border: 1px solid gray;
+            }
+
+            .tanpa-margin {
+                padding: 0 15px;
+            }
+            
+        }
+        </style>
+        <script src="./js/bootstrap.min.js"></script>
+</body>
 </html>

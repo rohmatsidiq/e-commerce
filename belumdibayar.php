@@ -24,7 +24,7 @@ if ($adatransaksi < 1) {
         <div class="col-md-7">
             <div style="display: flex; justify-content: end;">
                 <a onclick="return confirm('Yakin Batalkan Pesanan?')" class="btn btn-link btn-sm" href="batalkanpesanan.php?id=<?= $id_transaksi; ?>">Batalkan Pesanan</a>
-                <a class="btn btn-link btn-sm" href="account.php?halaman=detailbelumdibayar&id=<?= $id_transaksi; ?>">Detail</a>
+                <a class="btn btn-link btn-sm" href="account.php?halaman=detailtransaksi&id=<?= $id_transaksi; ?>">Detail</a>
             </div>
         </div>
     </div>
