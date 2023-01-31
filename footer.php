@@ -1,7 +1,7 @@
 <footer style="background-color: white;" class="mt-3 border-top  border-success pt-3 mb-3 print">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <h5 style="margin: 0;" class="text-success">Alamat</h5>
                     <p style="margin: 0;">Jl Jengger No 7 Sariharjo, Ngaglik</p>
                     <p style="margin: 0;">Sleman,Yogyakarta</p>
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-5 mb-4">
                     <h5 style="margin: 0;" class="text-success">Ikuti Kami</h5>
                     <div class="row">
                         <div class="col-6 col-md-4">
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <br>
-                    <h5 style="margin: 0;" class="text-success">E-commecre</h5>
+                    <h5 style="margin: 0;" class="text-success">E-commerce</h5>
                     <div class="row">
                         <div class="col-6 col-md-4">
                             <a href="">

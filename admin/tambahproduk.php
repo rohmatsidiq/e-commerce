@@ -41,7 +41,7 @@ if (isset($_POST["simpan"])) {
         </div>
         <div class="row">
             <div class="mb-3 col-12 col-md-4">
-                <label class="form-label" for="berat_produk">Berat</label>
+                <label class="form-label" for="berat_produk">Berat (gr)</label>
                 <input class="form-control" type="number" name="berat_produk" id="berat_produk" required>
             </div>
             <div class="mb-3 col-12 col-md-4">
