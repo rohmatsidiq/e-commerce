@@ -152,9 +152,10 @@ if (!isset($_GET["halaman"]) || $_GET["halaman"] == "belumdibayar") {
             .tanpa-margin {
                 padding: 0 15px;
             }
-            
+
         }
-        </style>
-        <script src="./js/bootstrap.min.js"></script>
+    </style>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>

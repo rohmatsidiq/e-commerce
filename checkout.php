@@ -12,7 +12,6 @@ if (!$key) {
     echo "<script>location='keranjang.php'</script>";
 }
 
-
 $id_pelanggan = $_SESSION['pelanggan']['id_pelanggan'];
 
 $querykeranjang = mysqli_query($koneksi, "SELECT * FROM keranjang WHERE id_pelanggan='$id_pelanggan'");
